@@ -1,0 +1,3 @@
+Refined Elevator Pitch
+
+This app is for customers who want a better dice rolling experience in a basic, web based format. This dice roller will have a visual representation
