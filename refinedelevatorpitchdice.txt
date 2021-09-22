@@ -1,3 +1,15 @@
 Refined Elevator Pitch
 
-This app is for customers who want a better dice rolling experience in a basic, web based format. This dice roller will have a visual representation
+This app is for customers who want a better dice rolling experience in a basic, web based format. This dice roller will have a visual representation which will allow a user to select a number and type of dice and then roll them, and will also allow for persistant rolls between refreshes.
+
+This will be an app for people that need a simple, to the point dice roller that works well and presents a nice visual representation of the dice. 
+
+Three risks that we can encounter during development are:
+
+    1: Going too far in our scope, not specifying enough and taking on more work then we can handle in the time allotted. It's easy to get lost in trying to add features, instead of refining the ones that you already have. 
+
+    2:
+
+    3:
+
+Essential features include:
