@@ -10,6 +10,11 @@ Three risks that we can encounter during development are:
 
     2: Another risk is overlapping commits, we are working with a git based project and if people are making changes without getting pull updates first, there could be conflicting commits. Our group's plan is to have good commuinication around changes, and also use pull requests to better seperate commits and make sure we aren't writing over each other's work. Another way to mitigate this risk is to have certain people work on certain parts of the site, so that we have separate roles.
 
-    3: Finally, a third risk
+    3: Finally, a third risk is poor time management and communication, in any group project there is always the risk that things get missed, communication mistakes can be made and this can lead to poor outcomes. To prevent this, we are planning on having an in person communication day each week to touch base on issues, as well as using asyncronous communication to stay up to date.
 
 Essential features include:
+
+    A dice rolling page
+    A visual display for the dice
+    the ability to select different quantities and types of dice
+    
