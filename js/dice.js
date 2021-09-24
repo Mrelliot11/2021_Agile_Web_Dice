@@ -1,6 +1,6 @@
 // Determine variables
-var rollNumber;
-var diceSize; 
+var rollNumber = 1;
+var diceSize = 6; 
 var firstName = "";
 var rollResult = 0;
 var resultSum = 0;
