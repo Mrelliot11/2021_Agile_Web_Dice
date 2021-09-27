@@ -1,26 +1,71 @@
 /*CSS file*/
 
+@font-face {
+    font-family: myFirstFont;
+    src: local(Blackmoon Quest);
+  }
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #cec2ae;
+    font-family: myFirstFont;
+    background-color: #fffcfc;
 }
 
 nav {
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
 }
 
 nav a:link {
-    color: blue;
+    color: darkgrey;
   }
   nav a:visited {
     color: purple;
   }
   nav a:hover, nav a:focus {
-    color: green;
+    color: #d60000;
   }
 
   nav li {
-      padding-bottom: 5px;
+      padding: 1em, 1em, 0, 1em;
+      display: inline;
   }
 
+  nav a {
+      border-radius: .3125em;
+      border-style: solid;
+      border-width: thin;
+      padding: .125em;
+      background-color: #716495;
+      font-size: 25px;
+  }
 
+  a {
+    border-radius: .3125em;
+    border-style: solid;
+    border-width: thin;
+    padding: .125em;
+    background-color: #716495;
+    color: darkgrey;
+    font-size: 18px;
+  }
+
+  a:hover, nav a:focus {
+    color: #d60000;
+  }
+
+form {
+    padding-bottom: .3125em;
+}
+
+select {
+    border-radius: .3125em;
+    background: white;
+    background-image: none;
+    color: blue;
+    text-align: center;
+    font-size: 1em;
+}
+
+p, b {
+    font-size: 18px;
+    color: #353535;
+}
