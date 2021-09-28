@@ -26,7 +26,7 @@ function rollDice() {
     rollResult = Math.floor(Math.random() * diceSize) + 1;
     //Displays result of each roll
     
-    document.write("<p>Roll #" + index + ": " + rollResult + "</p>");
+    document.getElementById('rollResultText').innerHTML = "<p>Roll #" + index + ": " + rollResult + "</p>";
     //Adds the result of each roll to the sum
     resultSum += rollResult;
     //add 1 to index
@@ -34,7 +34,9 @@ function rollDice() {
     }
     //Displays sum of all rolls
     message = "The total of all dice rolled is: " + resultSum;
-    document.write("<p>" + message + "</p>")
+
+    document.getElementById('messageResultText').innerHTML = message;
+
 }
 
 
