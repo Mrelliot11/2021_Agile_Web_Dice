@@ -7,6 +7,7 @@ var resultSum = 0;
 var message = "";
 var index = 1;
 
+
 function rollDice() {
     //Check to see if roll amounis a valid number
     while (numberValidator(rollNumber)){
@@ -24,9 +25,14 @@ function rollDice() {
     while (index <= rollNumber) {
     //Selects random number between 1 and 6
     rollResult = Math.floor(Math.random() * diceSize) + 1;
-    //Displays result of each roll
+    //Displays result of each roll by creating <p> element for each roll
+    var tagP = document.createElement("p");
+    var resultOutput = document.createTextNode("Roll #" + index + ": " + rollResult);
+    var divElement = document.getElementById("diceRolls")
     
-    document.getElementById('rollResultText').innerHTML = "<p>Roll #" + index + ": " + rollResult + "</p>";
+    tagP.appendChild(resultOutput);
+    divElement.appendChild(tagP);
+    
     //Adds the result of each roll to the sum
     resultSum += rollResult;
     //add 1 to index
