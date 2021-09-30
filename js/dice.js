@@ -7,8 +7,8 @@ function rollDice() {
   var resultSum = 0;
   var message = "";
   var index = 1;
-  var rollMinResult = 0;
-  var rollMaxResult = 0;
+  var rollEnhancement = 0;
+  
 
   document.getElementById('diceRolls').innerHTML = "";
 
@@ -16,9 +16,8 @@ function rollDice() {
   var rollCountObj = document.getElementById('numberOfDiceInput');
   var rollNumberObj = document.getElementById('diceSizeList');
 
-  //Create variables to get min and max values from the user
-  var rollMin = document.getElementById('diceRollMin');
-  var rollMax = document.getElementById('diceRollMax');
+  //Create variable to get enhancement from user
+  var rollEnhancementObj = document.getElementById('diceEnhancementList')
 
   //Create object of the message result text
   var messageResultTextObj = document.getElementById('messageResultText');
@@ -26,21 +25,14 @@ function rollDice() {
   diceCount = Number(rollCountObj.value);
   diceSize = Number(rollNumberObj.value);
   //Set roll min and max as numbers
-  rollMinResult = Number(rollMin.value);
-  rollMaxResult = Number(rollMax.value);
+  rollEnhancement = Number(rollEnhancementObj.value);
 
   if (Number.isInteger(diceCount) && diceCount > 0) {
     //Repeats while statement based on number selected in inputNumber
     while (index <= diceCount) {
-      //Selects random number between 1 and 6
-      rollResult = Math.floor(Math.random() * diceSize) + 1;
-      //Set rollResult to the max/min that the user has chosen
-      if (rollResult < rollMinResult) {
-          rollResult = rollMinResult
-      }
-      if (rollResult > rollMaxResult) {
-          rollResult = rollMaxResult
-      }
+      //Selects random number between 1 and 6 and adds whatever enhancement the user chose
+      rollResult = (Math.floor(Math.random() * diceSize) + 1) + rollEnhancementObj;
+      
       //Displays result of each roll by creating <p> element for each roll
       var tagP = document.createElement("p");
       var resultOutput = document.createTextNode("Roll #" + index + ": " + rollResult);
