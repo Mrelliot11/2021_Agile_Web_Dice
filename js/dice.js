@@ -21,7 +21,7 @@ function rollDice() {
   diceSize = Number(rollNumberObj.value);
 
   console.log(diceCount);
-  if (Number.isInteger(diceCount) && diceCount != 0) {
+  if (Number.isInteger(diceCount) && diceCount > 0) {
     //Repeats while statement based on number selected in inputNumber
     while (index <= diceCount) {
       //Selects random number between 1 and 6
