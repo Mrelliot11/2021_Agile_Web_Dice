@@ -24,7 +24,7 @@ function rollDice() {
   //Set dice count and size as numbers
   diceCount = Number(rollCountObj.value);
   diceSize = Number(rollNumberObj.value);
-  //Set roll min and max as numbers
+  //Set roll enhancement as a number
   rollEnhancement = Number(rollEnhancementObj.value);
 
   if (Number.isInteger(diceCount) && diceCount > 0) {
