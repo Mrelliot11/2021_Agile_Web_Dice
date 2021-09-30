@@ -69,6 +69,26 @@ form {
     font-size: 1em;
 }
 
+#diceRollMin{
+  border-radius: .3125em;
+  box-sizing: content-box;
+  background: white;
+  background-image: none;
+  color: blue;
+  text-align: center;
+  font-size: 1em;
+}
+
+#diceRollMax{
+  border-radius: .3125em;
+  box-sizing: content-box;
+  background: white;
+  background-image: none;
+  color: blue;
+  text-align: center;
+  font-size: 1em;
+}
+
 #rollButton {
   border-radius: .3125em;
   font-size: 1em;
