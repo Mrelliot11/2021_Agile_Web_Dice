@@ -30,7 +30,7 @@
   <form>  
     <b> How many times would you like to roll the dice? </b>  
 
-    <input id="numberOfDiceInput" type="text" onchange = "value = this.value">
+    <input id="numberOfDiceInput" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" ">
    
   </form> 
 
