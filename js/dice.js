@@ -10,18 +10,18 @@ function rollDice() {
 
   document.getElementById('diceRolls').innerHTML = "";
 
-
+  //Creating objects from the two selections, number of dice and 
   var rollCountObj = document.getElementById('numberOfDiceInput');
-  var messageResultTextObj = document.getElementById('messageResultText');
-
   var rollNumberObj = document.getElementById('diceSizeList');
 
+  //Create object of the message result text
+  var messageResultTextObj = document.getElementById('messageResultText');
+  //Set dice count and size as numbers
   diceCount = Number(rollCountObj.value);
   diceSize = Number(rollNumberObj.value);
+
   console.log(diceCount);
-
-
-  if (Number.isInteger(diceCount)) {
+  if (Number.isInteger(diceCount) && diceCount != 0) {
     //Repeats while statement based on number selected in inputNumber
     while (index <= diceCount) {
       //Selects random number between 1 and 6
@@ -45,9 +45,8 @@ function rollDice() {
       document.getElementById('messageResultText').innerHTML = message;
     }
   } else {
-
-    console.log(diceCount);
-    messageResultTextObj.innerHTML = "Please enter an integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
+    rollCountObj.focus();
+    messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
 
   }
 }
