@@ -10,7 +10,7 @@ function rollDice() {
 
   document.getElementById('diceRolls').innerHTML = "";
 
-  //Creating objects from the two selections, number of dice and 
+  //Creating objects from the two selections, number of dice and dice size list
   var rollCountObj = document.getElementById('numberOfDiceInput');
   var rollNumberObj = document.getElementById('diceSizeList');
 
