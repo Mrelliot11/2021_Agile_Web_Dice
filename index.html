@@ -27,10 +27,10 @@
   </p>
 
 
-  <form>  
+  <form onsubmit="return false;">  
     <b> How many times would you like to roll the dice? </b>  
 
-    <input id="numberOfDiceInput" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" ">
+    <input id="numberOfDiceInput" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
    
   </form> 
 
@@ -59,6 +59,7 @@
   <p id='messageResultText'></p>
 
   <script src="js/dice.js"></script>
+
 </body>
 
 </html>
