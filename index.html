@@ -29,27 +29,16 @@
 
   <form>  
     <b> How many times would you like to roll the dice? </b>  
-    <select id = "rollNumberList" onchange = "getRollNumber(this)" >  
-      <option value="1"> 1 </option>  
-      <option value="2"> 2 </option>  
-      <option value="3"> 3 </option>  
-      <option value="4"> 4 </option>  
-      <option value="5"> 5 </option>  
-      <option value="6"> 6 </option> 
-      <option value="7"> 7 </option>  
-      <option value="8"> 8 </option>  
-      <option value="9"> 9 </option>  
-      <option value="10"> 10 </option>  
-    
-    </select>  
+
+    <input id="numberOfDiceInput" type="text" onchange = "value = this.value">
    
   </form> 
 
 
   <form>  
     <b> The size of dice you would like to roll </b>  
-    <select id = "diceSizeList" onchange = "getDiceSize(this)" >  
-      <option value="6"> d6 </option>  
+    <select id = "diceSizeList" onchange = "value = this.value" >  
+      <option value="6" selected> d6 </option>  
       <option value="8"> d8 </option>  
       <option value="10"> d10 </option>  
       <option value="12"> d12 </option>  
