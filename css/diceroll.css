@@ -19,6 +19,7 @@ nav a:link {
   }
   nav a:visited {
     color: purple;
+    
   }
   nav a:hover, nav a:focus {
     color: #d60000;
@@ -36,6 +37,7 @@ nav a:link {
       padding: .125em;
       background-color: #716495;
       font-size: 25px;
+      opacity: 80%;
   }
 
   a {
@@ -56,13 +58,23 @@ form {
     padding-bottom: .3125em;
 }
 
-select {
+#numberOfDiceInput{
     border-radius: .3125em;
+    box-sizing: content-box;
+    width: 8%;
     background: white;
     background-image: none;
     color: blue;
     text-align: center;
     font-size: 1em;
+}
+
+#rollButton {
+  border-radius: .3125em;
+  font-size: 1em;
+  background: white;
+  color:black;
+
 }
 
 p, b {
