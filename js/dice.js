@@ -31,7 +31,7 @@ function rollDice() {
     //Repeats while statement based on number selected in inputNumber
     while (index <= diceCount) {
       //Selects random number between 1 and 6 and adds whatever enhancement the user chose
-      rollResult = (Math.floor(Math.random() * diceSize) + 1) + rollEnhancementObj;
+      rollResult = (Math.floor(Math.random() * diceSize) + 1) + rollEnhancement;
       
       //Displays result of each roll by creating <p> element for each roll
       var tagP = document.createElement("p");
