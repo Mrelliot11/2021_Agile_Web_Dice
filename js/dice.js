@@ -20,7 +20,6 @@ function rollDice() {
   diceCount = Number(rollCountObj.value);
   diceSize = Number(rollNumberObj.value);
 
-  console.log(diceCount);
   if (Number.isInteger(diceCount) && diceCount > 0) {
     //Repeats while statement based on number selected in inputNumber
     while (index <= diceCount) {
@@ -45,6 +44,7 @@ function rollDice() {
       document.getElementById('messageResultText').innerHTML = message;
     }
   } else {
+    //Focuses mouse to text box
     rollCountObj.focus();
     messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
 
