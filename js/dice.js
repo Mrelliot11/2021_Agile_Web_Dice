@@ -79,7 +79,7 @@ function rollDice() {
 
 
       //Displays overall sum of all rolls
-      messageTotal =  "The overall sum of all rolls is " + totalSum;
+      messageTotal =  "The overall sum of all rolls is: " + totalSum;
       document.getElementById('messageAllRollsText').innerHTML = messageTotal;
 
       
