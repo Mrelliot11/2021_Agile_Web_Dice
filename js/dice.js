@@ -56,7 +56,7 @@ function rollDice() {
       message = "The total of all dice rolled is: " + resultSum;
 
       //Displays average of all rolls
-      var resultAverage = (resultSum / diceCount);
+      var resultAverage = ((resultSum / diceCount) + (diceCount * rollEnhancement));
       messageAverage = "The average of all dice rolled is: " + Math.floor(resultAverage + 1);
 
       //Displays max of all rolls
