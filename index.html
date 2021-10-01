@@ -26,16 +26,16 @@
     and you can check out our <a href="/FAQ.html">FAQ here</a>
   </p>
 
-
-  <form onsubmit="return false;">  
+  
+  <form id="diceInputForm" onsubmit="return false;">  
     <b> How many times would you like to roll the dice? </b>  
 
     <input id="numberOfDiceInput" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
-   
+  
   </form> 
 
 
-  <form>  
+  <form id="diceEnhancementForm">  
     <b> The enhancement you would like to add to your dice </b>  
     <select id = "diceEnhancementList" onchange = "value = this.value" >  
       <option value="-10"> -10 </option>  
@@ -60,11 +60,11 @@
       <option value="9"> +9 </option>  
       <option value="10"> +10 </option>
     </select>  
- 
+
   </form> 
 
 
-  <form>  
+  <form id="diceSizeForm">  
     <b> The size of dice you would like to roll </b>  
     <select id = "diceSizeList" onchange = "value = this.value" >  
       <option value="6" selected> d6 </option>  
@@ -75,7 +75,7 @@
       <option value="100"> d100 </option> 
       <input id="rollButton" type="button" value="Roll" onClick="rollDice()"/>
     </select>  
- 
+
   </form> 
 
   <div id="diceRolls">
@@ -89,8 +89,11 @@
   <p id='messageAverageResultText'></p>
   <p id='messageMaxResultText'></p>
   <p id='messageMinResultText'></p>
+  <p id='messageAllRollsText'></p>
 
   <script src="js/dice.js"></script>
+
+  
 
 </body>
 

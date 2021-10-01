@@ -1,3 +1,6 @@
+
+var totalSum = 0;
+
 function rollDice() {
 
   // Determine variables
@@ -12,8 +15,11 @@ function rollDice() {
   var messageAverage= "";
   var messageMax = "";
   var messageMin = "";
+  var messageTotal = "";
   var index = 1;
   var rollEnhancement = 0;
+  
+  
 
   
   document.getElementById('diceRolls').innerHTML = "";
@@ -47,13 +53,14 @@ function rollDice() {
       tagP.appendChild(resultOutput);
       divElement.appendChild(tagP);
 
-      //Adds the result of each roll to the sum
+      //Adds the result of each roll group to the sum
       resultSum = resultSum + rollResult;
+      
       //add 1 to index
       index++;
       console.log(resultSum);
       //Displays sum of all rolls
-      message = "The total of all dice rolled is: " + resultSum;
+      message = "The totals of this roll is: " + resultSum;
 
       //Displays average of all rolls
       var resultAverage = ((resultSum / diceCount) + (diceCount * rollEnhancement));
@@ -67,6 +74,16 @@ function rollDice() {
       var resultMin = (diceCount + (diceCount * rollEnhancement));
       messageMin = "The min of all dice rolled is: " + resultMin;
 
+      //Adds sum of each roll group to overall sum 
+      totalSum = totalSum + rollResult;
+
+
+      //Displays overall sum of all rolls
+      messageTotal =  "The overall sum of all rolls is " + totalSum;
+      document.getElementById('messageAllRollsText').innerHTML = messageTotal;
+
+      
+
       //Displays each calculation
       document.getElementById('messageResultText').innerHTML = message;
       document.getElementById('messageAverageResultText').innerHTML = messageAverage;
@@ -79,4 +96,12 @@ function rollDice() {
     messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
 
   }
+
+  
+
 }
+
+
+
+
+
