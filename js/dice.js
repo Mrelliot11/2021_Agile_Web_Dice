@@ -5,11 +5,17 @@ function rollDice() {
   var diceSize = 0;
   var rollResult = 0;
   var resultSum = 0;
+  var resultAverage = 0;
+  var resultMax = 0;
+  var resultMin = 0;
   var message = "";
+  var messageAverage= "";
+  var messageMax = "";
+  var messageMin = "";
   var index = 1;
   var rollEnhancement = 0;
-  
 
+  
   document.getElementById('diceRolls').innerHTML = "";
 
   //Creating objects from the two selections, number of dice and dice size list
@@ -49,7 +55,23 @@ function rollDice() {
       //Displays sum of all rolls
       message = "The total of all dice rolled is: " + resultSum;
 
+      //Displays average of all rolls
+      var resultAverage = (resultSum / diceCount);
+      messageAverage = "The average of all dice rolled is: " + Math.floor(resultAverage + 1);
+
+      //Displays max of all rolls
+      var resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
+      messageMax = "The max of all dice rolled is: " + resultMax;
+
+      //Displays min of all rolls
+      var resultMin = (diceCount + (diceCount * rollEnhancement));
+      messageMin = "The min of all dice rolled is: " + resultMin;
+
+      //Displays each calculation
       document.getElementById('messageResultText').innerHTML = message;
+      document.getElementById('messageAverageResultText').innerHTML = messageAverage;
+      document.getElementById('messageMaxResultText').innerHTML = messageMax;
+      document.getElementById('messageMinResultText').innerHTML = messageMin;
     }
   } else {
     //Focuses mouse to text box
