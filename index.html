@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>WebDice</title>
-  <link rel="stylesheet" href="css/diceroll.css">
+  <link rel="stylesheet" href="css/dicerolldark.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 </head>
@@ -19,6 +19,13 @@
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
   </nav>
+
+  <div id="togglebtn">
+
+    <button id="lightMode" onclick="toggleTheme('css/diceroll.css')">Light</button>
+    <button id="lightMode" onclick="toggleTheme('css/dicerolldark.css')">Dark</button>
+
+  </div>
 
   <p id="introText">
     Hello! Welcome to our dice rolling app. This app will allow you to roll dice
@@ -93,7 +100,7 @@
   <p id='messageAllRollsText'></p>
 
   <script src="js/dice.js"></script>
-
+  <script src="js/webThemeToggle.js"></script>
   
 
 </body>

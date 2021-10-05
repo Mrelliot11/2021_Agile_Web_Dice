@@ -7,7 +7,8 @@
 
 * {
     font-family: myFirstFont;
-    background-color: #fffcfc;
+    background-color: black;
+    color: white;
 }
 
 #togglebtn {
@@ -35,10 +36,10 @@ nav {
 }
 
 nav a:link {
-    color: darkgrey;
+    color: white;
   }
   nav a:visited {
-    color: purple;
+    color: white;
     
   }
   nav a:hover, nav a:focus {
@@ -99,5 +100,5 @@ form {
 
 p, b {
     font-size: 18px;
-    color: #353535;
+    color: white;
 }
