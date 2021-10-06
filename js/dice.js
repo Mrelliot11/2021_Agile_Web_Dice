@@ -29,7 +29,7 @@ function rollDice() {
   var rollNumberObj = document.getElementById('diceSizeList');
 
   //Create variable to get enhancement from user
-  var rollEnhancementObj = document.getElementById('diceEnhancementList')
+  var rollEnhancementObj = document.getElementById('diceEnhancementList');
 
   //Create object of the message result text
   var messageResultTextObj = document.getElementById('messageResultText');
@@ -63,15 +63,15 @@ function rollDice() {
       message = "The totals of this roll is: " + resultSum;
 
       //Displays average of all rolls
-      var resultAverage = ((resultSum / diceCount) + (diceCount * rollEnhancement));
+      resultAverage = ((resultSum / diceCount) + (diceCount * rollEnhancement));
       messageAverage = "The average of each dice rolled is: " + Math.floor(resultAverage + 1);
 
       //Displays max of all rolls
-      var resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
+      resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
       messageMax = "The max of all dice rolled is: " + resultMax;
 
       //Displays min of all rolls
-      var resultMin = (diceCount + (diceCount * rollEnhancement));
+      resultMin = (diceCount + (diceCount * rollEnhancement));
       messageMin = "The min of all dice rolled is: " + resultMin;
 
       //Adds sum of each roll group to overall sum 
