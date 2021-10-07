@@ -1,103 +1,109 @@
 /*CSS file*/
 
 @font-face {
-    font-family: myFirstFont;
-    src: local(Blackmoon Quest);
-  }
-
-* {
-    font-family: myFirstFont;
-    background-color: #fffcfc;
+  font-family: myFirstFont;
+  src: local(Blackmoon Quest);
 }
 
-#togglebtn {
-    padding-left: 2.35em;
-    display: inline;
+* {
+  font-family: myFirstFont;
+  background-color: #fffcfc;
 }
 
 #lightMode {
-    color: white;
-    border-radius: .3125em;
-    border-style: solid;
-    border-width: thin;
-    padding: .125em;
-    background-color: #716495;
-    font-size: 25px;
-    opacity: 80%;
+  color: white;
+  border-radius: .3125em;
+  border-style: solid;
+  border-width: thin;
+  padding: .125em;
+  background-color: #716495;
+  font-size: 25px;
+  opacity: 80%;
 }
 
-#lightMode:hover, #lightMode:focus {
-    color: red;
+#lightMode:hover,
+#lightMode:focus {
+  color: red;
 }
 
 nav {
-    padding-bottom: 0.625em;
+  padding-bottom: 0.625em;
+  text-align: center;
+
 }
 
 nav a:link {
-    color: darkgrey;
-  }
-  nav a:visited {
-    color: purple;
-    
-  }
-  nav a:hover, nav a:focus {
-    color: #d60000;
-  }
-
-  nav li {
-      padding: 1em, 1em, 0, 1em;
-      display: inline;
-  }
-
-  nav a {
-      border-radius: .3125em;
-      border-style: solid;
-      border-width: thin;
-      padding: .125em;
-      background-color: #716495;
-      font-size: 25px;
-      opacity: 80%;
-  }
-
-  a {
-    border-radius: .3125em;
-    border-style: solid;
-    border-width: thin;
-    padding: .125em;
-    background-color: #716495;
-    color: darkgrey;
-    font-size: 18px;
-  }
-
-  a:hover, nav a:focus {
-    color: #d60000;
-  }
-
-form {
-    padding-bottom: .3125em;
+  color: darkgrey;
 }
 
-#numberOfDiceInput{
-    border-radius: .3125em;
-    box-sizing: content-box;
-    width: 8%;
-    background: white;
-    background-image: none;
-    color: blue;
-    text-align: center;
-    font-size: 1em;
+nav a:visited {
+  color: purple;
+
+}
+
+nav a:hover,
+nav a:focus {
+  color: #d60000;
+}
+
+nav li {
+  padding: 1em, 1em, 0, 1em;
+  display: inline;
+
+
+}
+
+nav a {
+  border-radius: .3125em;
+  border-style: solid;
+  border-width: thin;
+  padding: .125em;
+  background-color: #716495;
+  font-size: 25px;
+  opacity: 80%;
+  display: inline-block;
+}
+
+a {
+  border-radius: .3125em;
+  border-style: solid;
+  border-width: thin;
+  padding: .125em;
+  background-color: #716495;
+  color: darkgrey;
+  font-size: 18px;
+}
+
+a:hover,
+nav a:focus {
+  color: #d60000;
+}
+
+form {
+  padding-bottom: .3125em;
+}
+
+#numberOfDiceInput {
+  border-radius: .3125em;
+  box-sizing: content-box;
+  width: 8%;
+  background: white;
+  background-image: none;
+  color: blue;
+  text-align: center;
+  font-size: 1em;
 }
 
 #rollButton {
   border-radius: .3125em;
   font-size: 1em;
   background: white;
-  color:black;
+  color: black;
 
 }
 
-p, b {
-    font-size: 18px;
-    color: #353535;
+p,
+b {
+  font-size: 18px;
+  color: #353535;
 }
