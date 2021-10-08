@@ -38,6 +38,21 @@ function rollDice() {
   diceCount = Number(rollCountObj.value);
   diceSize = Number(rollNumberObj.value);
 
+  //Show die depending on the size the user chooses
+  if (diceSize === 4) {
+    document.getElementById("d4ImageLight").style.visibility = "visible";
+  } else if (diceSize === 6) {
+    document.getElementById("d6ImageLight").style.visibility = "visible";
+  } else if (diceSize === 8) {
+    document.getElementById("d8ImageLight").style.visibility = "visible";
+  } else if (diceSize === 10) {
+    document.getElementById("d10ImageLight").style.visibility = "visible";
+  } else if (diceSize === 12) {
+    document.getElementById("d12ImageLight").style.visibility = "visible";
+  } else if (diceSize === 20) {
+    document.getElementById("d20ImageLight").style.visibility = "visible";
+  }
+
   //Set roll enhancement as a number
   rollEnhancement = Number(rollEnhancementObj.value);
 
