@@ -131,3 +131,27 @@ b {
 #d20ImageLight {
   padding-left: 2em;
 }
+
+#dieImagesDark {
+  visibility: hidden;
+}
+
+#d6ImageDark {
+  padding-left: 2em;
+}
+
+#d8ImageDark {
+  padding-left: 2em;
+}
+
+#d10ImageDark {
+  padding-left: 2em;
+}
+
+#d12ImageDark {
+  padding-left: 2em;
+}
+
+#d20ImageDark {
+  padding-left: 2em;
+}

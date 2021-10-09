@@ -86,6 +86,15 @@
 
   </form> 
 
+  <form id="diceColor">  
+    <b> What color would you like your Dice to be? </b>  
+    <select id = "diceColorList" onchange = "value = this.value" >
+      <option value="white" selected> White </option>  
+      <option value="black"> Black </option>  
+    </select>  
+
+  </form> 
+
   <div id="diceRolls">
 
   </div>
@@ -107,6 +116,15 @@
     <img id="d12ImageLight" src="images/Light d12.png" height="100" width="100">
     <img id="d20ImageLight" src="images/Light d20.png" height="100" width="100">
   </div>
+  <div id="dieImagesDark">
+    <img id="d4ImageDark" src="images/Dark d4.png" height="100" width="100">
+    <img id="d6ImageDark" src="images/Dark d6.png" height="100" width="100">
+    <img id="d8ImageDark" src="images/Dark d8.png" height="100" width="100">
+    <img id="d10ImageDark" src="images/Dark d10.png" height="100" width="100">
+    <img id="d12ImageDark" src="images/Dark d12.png" height="100" width="100">
+    <img id="d20ImageDark" src="images/Dark d20.png" height="100" width="100">
+  </div>
+
 
   <script src="js/dice.js"></script>
   <script src="js/webThemeToggle.js"></script>
