@@ -20,6 +20,14 @@ function rollDice() {
   var tagP;
   var resultOutput;
   var divElement;
+  var rollSound = new Audio();
+
+  // Determine source for roll sound file
+  rollSound.src = "audio/rollingdice.wav";
+
+  //play the audio file
+  rollSound.play();
+
 
   //Creating objects from the two selections, number of dice and dice size list
   var rollCountObj = document.getElementById("numberOfDiceInput");
@@ -132,3 +140,5 @@ function userLogin() {
        alert("Please make sure that the username and password you have entered are at least 12 characters long.");
    }
  }
+
+
