@@ -105,3 +105,27 @@ b {
   font-size: 18px;
   color: white;
 }
+
+#dieImages {
+  visibility: hidden;
+}
+
+#d6ImageLight {
+  padding-left: 2em;
+}
+
+#d8ImageLight {
+  padding-left: 2em;
+}
+
+#d10ImageLight {
+  padding-left: 2em;
+}
+
+#d12ImageLight {
+  padding-left: 2em;
+}
+
+#d20ImageLight {
+  padding-left: 2em;
+}
