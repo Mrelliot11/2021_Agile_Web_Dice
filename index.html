@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>WebDice</title>
-  <link rel="stylesheet" href="css/dicerolldark.css">
+  <link href="css/diceroll.css" rel="stylesheet" type="text/css" title="s1" id="s1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images\favicon.ico"/>
   
@@ -20,10 +20,13 @@
       <li><a href="aboutus.html">About Us</a></li>
     </ul>
 
-    <button id="lightMode" onclick="toggleTheme('css/diceroll.css')">Light</button>
-    <button id="lightMode" onclick="toggleTheme('css/dicerolldark.css')">Dark</button>
+    <form>
+      <select id="mySelect">
+        <option value="css/diceroll.css">Light</option>
+        <option value="css/dicerolldark.css">Dark</option>
+      </select>
+    </form>
 
-  
   </nav>
   
 
@@ -131,6 +134,7 @@
 
   <script src="js/dice.js"></script>
   <script src="js/webThemeToggle.js"></script>
+
   
 
 </body>
