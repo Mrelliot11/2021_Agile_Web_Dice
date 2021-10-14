@@ -79,6 +79,12 @@ nav a:focus {
   color: #d60000;
 }
 
+#ddlToggleTheme {
+  position: absolute;
+  right: 0.625em;
+  top: 1em;
+}
+
 form {
   padding-bottom: .3125em;
 }
