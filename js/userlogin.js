@@ -1,18 +1,19 @@
 /*jslint browser: true*/
 /*global window */
+/*devel: true*/
 
 function userLogin() {
     "use strict";
-    var username = "";
-    var password = "";
+
+    var username = document.getElementById('userUsername').value;
+    var password = document.getElementById('userPassword').value;
+
     var currentWindow = window;
 
-    username = document.getElementById("userUsername");
-    password = document.getElementById("userPassword");
-
-    if (username.length >= 12 && password.length >= 12) {
+    if (username.length >= 6 && password.length >= 6) {
         currentWindow.location.href = "index.html";
     } else {
         window.alert("Please make sure that the username and password you have entered are at least 12 characters long.");
     }
+
 }

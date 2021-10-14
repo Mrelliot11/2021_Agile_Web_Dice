@@ -1,32 +1,49 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="css/diceroll.css">
-    <link rel="shortcut icon" href="images\favicon.ico"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/login.css">
 </head>
+<body>
 
-<body class ="formBody">
+<h2 id='introHeading'>Welcome to webdice!</h2>
 
-    <div class="container">
-        <form class="form" id="login">
+<button onclick="document.getElementById('id01').style.display='block'" id="loginButton">Login</button>
 
-            <h1 class="formTitle">Login</h1>
-
-            <div>
-                <input type="text" class="formEntry" id="userUsername" autofocus placeholder="Username">
-            </div>
-
-            <div>
-                <input type="password" class="formEntry" id="userPassword" placeholder="Password">
-            </div>
-
-            <button class="formButton" input id="loginButton" type="button" onClick="userLogin()">Continue</button>
-
-        </form>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="javascript:;" onsubmit="userLogin();">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/dicelogo.png" alt="DiceAvatar" class="avatar">
     </div>
 
-    <script src="js/userlogin.js"></script>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="userUsername" name="userUsername" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="userPassword" name="userPassword" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="js/userlogin.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
+</html>
