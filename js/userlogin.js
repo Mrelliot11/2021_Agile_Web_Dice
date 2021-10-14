@@ -13,7 +13,7 @@ function userLogin() {
     if (username.length >= 6 && password.length >= 6) {
         currentWindow.location.href = "index.html";
     } else {
-        window.alert("Please make sure that the username and password you have entered are at least 12 characters long.");
+        window.alert("Please make sure that the username and password you have entered are at least 6 characters long.");
     }
 
 }
