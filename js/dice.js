@@ -1,6 +1,13 @@
 /*jslint browser: true*/
 
 var totalSum = 0;
+var rollSound = new Audio();
+
+//Determines the volume of the roll sound
+volume = document.getElementById("volume-control");
+volume.addEventListener("change", function(e) {
+rollSound.volume = e.currentTarget.value / 100;
+})
 
 function rollDice() {
     "use strict";
@@ -22,7 +29,6 @@ function rollDice() {
     var tagP;
     var resultOutput;
     var divElement;
-    var rollSound = new Audio();
     var diceColorObj = document.getElementById("diceColorList");
     var diceColor;
 
@@ -31,7 +37,7 @@ function rollDice() {
 
     // Determine source for roll sound file
     rollSound.src = "audio/rollingdice.wav";
-
+    
     //play the audio file
     rollSound.play();
 
