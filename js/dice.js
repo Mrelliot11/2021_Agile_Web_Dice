@@ -1,3 +1,5 @@
+/*jslint browser: true*/
+
 var totalSum = 0;
 
 function rollDice() {
