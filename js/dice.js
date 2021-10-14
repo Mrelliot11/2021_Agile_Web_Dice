@@ -37,7 +37,7 @@ function rollDice() {
 
     // Determine source for roll sound file
     rollSound.src = "audio/rollingdice.wav";
-    
+
     //play the audio file
     rollSound.play();
 
@@ -96,7 +96,7 @@ function rollDice() {
             totalSum = totalSum + rollResult;
 
             //Displays average of all rolls
-            resultAverage = Math.round((resultSum / diceCount) + (diceCount * rollEnhancement));
+            resultAverage = Math.round(resultSum / diceCount);
             messageAverage = "The average of all dice rolled is: " + resultAverage;
 
             //Displays overall sum of all rolls
