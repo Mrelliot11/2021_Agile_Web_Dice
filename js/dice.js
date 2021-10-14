@@ -78,16 +78,11 @@ function rollDice() {
       index = index + 1;
 
       //Displays sum of all rolls
-      message = "The totals of this roll is: " + resultSum;
+      message = "The total of this roll is: " + resultSum;
 
       //Displays max of all rolls
       resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
       messageMax = "The max of all dice rolled is: " + resultMax;
-
-      
-      //Displays average of all rolls
-      resultAverage = ((((diceSize + 1) / 2) * diceCount) + (diceCount * rollEnhancement));
-      messageAverage = "The average of all dice rolled is: " + resultAverage;
 
       //Displays min of all rolls
       resultMin = (diceCount + (diceCount * rollEnhancement));
@@ -95,6 +90,10 @@ function rollDice() {
       
       //Adds sum of each roll group to overall sum 
       totalSum = totalSum + rollResult;
+
+      //Displays average of all rolls
+      resultAverage = Math.round((totalSum / diceCount) + (diceCount * rollEnhancement));
+      messageAverage = "The average of all dice rolled is: " + resultAverage;
 
       //Displays overall sum of all rolls
       messageTotal = "The overall sum of all rolls is: " + totalSum;
