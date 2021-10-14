@@ -1,10 +1,9 @@
-function toggleTheme(value) {
-
-    // Get the name of the stylesheet
-    // as a parameter and set it
-    // using href attribute.
-    var sheets = document
-        .getElementsByTagName('link');
-
-    sheets[0].href = value;
-}
+function setStyleSource (linkID, sourceLoc) {
+    var theLink = document.getElementById(linkID);
+    theLink.href = sourceLoc;
+  }
+  
+  document.getElementById("mySelect").addEventListener("change", function(){
+      var selected = this.options[this.selectedIndex].value;
+      setStyleSource ("s1", selected)
+  });
