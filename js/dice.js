@@ -92,7 +92,7 @@ function rollDice() {
       totalSum = totalSum + rollResult;
 
       //Displays average of all rolls
-      resultAverage = Math.round((totalSum / diceCount) + (diceCount * rollEnhancement));
+      resultAverage = Math.round((resultSum / diceCount) + (diceCount * rollEnhancement));
       messageAverage = "The average of all dice rolled is: " + resultAverage;
 
       //Displays overall sum of all rolls
