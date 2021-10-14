@@ -1,6 +1,13 @@
 /*jslint browser: true*/
 
 var totalSum = 0;
+var rollSound = new Audio();
+
+//Determines the volume of the roll sound
+volume = document.getElementById("volume-control");
+volume.addEventListener("change", function(e) {
+rollSound.volume = e.currentTarget.value / 100;
+})
 
 function rollDice() {
     "use strict";
@@ -22,7 +29,6 @@ function rollDice() {
     var tagP;
     var resultOutput;
     var divElement;
-    var rollSound = new Audio();
     var diceColorObj = document.getElementById("diceColorList");
     var diceColor;
 
@@ -90,7 +96,7 @@ function rollDice() {
             totalSum = totalSum + rollResult;
 
             //Displays average of all rolls
-            resultAverage = Math.round((resultSum / diceCount) + (diceCount * rollEnhancement));
+            resultAverage = Math.round(resultSum / diceCount);
             messageAverage = "The average of all dice rolled is: " + resultAverage;
 
             //Displays overall sum of all rolls
