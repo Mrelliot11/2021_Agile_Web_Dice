@@ -1,19 +1,19 @@
+/*jslint browser: true*/
+/*global window */
+/*devel: true*/
+
 function userLogin() {
+    "use strict";
 
-    var username = "";
-    var password = "";
-    var usernameLength = "";
-    var passwordLength = "";
+    var username = document.getElementById('userUsername').value;
+    var password = document.getElementById('userPassword').value;
 
-    username = document.getElementById("userUsername");
-    password = document.getElementById("userPassword");
+    var currentWindow = window;
 
-    usernameLength = username.length;
-    passwordLength = password.length;
-
-    if (usernameLength >= 12 && passwordLength >= 12) {
-        window.location = "index.html";
+    if (username.length >= 6 && password.length >= 6) {
+        currentWindow.location.href = "index.html";
     } else {
-        alert("Please make sure that the username and password you have entered are at least 12 characters long.");
+        window.alert("Please make sure that the username and password you have entered are at least 6 characters long.");
     }
+
 }
