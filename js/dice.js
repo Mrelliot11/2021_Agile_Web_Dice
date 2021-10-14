@@ -26,35 +26,35 @@ function rollDice() {
     var diceColorObj = document.getElementById("diceColorList");
     var diceColor;
 
-  //set dice color variable
+    //set dice color variable
     diceColor = diceColorObj.value.toString();
 
-  // Determine source for roll sound file
+    // Determine source for roll sound file
     rollSound.src = "audio/rollingdice.wav";
 
-  //play the audio file
+    //play the audio file
     rollSound.play();
 
 
-  //Creating objects from the two selections, number of dice and dice size list
+    //Creating objects from the two selections, number of dice and dice size list
     var rollCountObj = document.getElementById("numberOfDiceInput");
     var rollNumberObj = document.getElementById("diceSizeList");
 
-  //Create variable to get enhancement from user
+    //Create variable to get enhancement from user
     var rollEnhancementObj = document.getElementById("diceEnhancementList");
 
   //Create object of the message result text
     var messageResultTextObj = document.getElementById("messageResultText");
 
-  //Clear diceroll box
+    //Clear diceroll box
     document.getElementById("diceRolls").innerHTML = "";
 
-  //Set dice count and size as numbers
+    //Set dice count and size as numbers
     diceCount = Number(rollCountObj.value);
     diceSize = Number(rollNumberObj.value);
 
 
-  //Set roll enhancement as a number
+    //Set roll enhancement as a number
     rollEnhancement = Number(rollEnhancementObj.value);
 
     if (Number.isInteger(diceCount) && diceCount > 0) {
@@ -120,7 +120,7 @@ function rollDice() {
                     document.getElementById("d20ImageLight").style.visibility = "visible";
                 }
             } else if (diceColor === "black") {
-        //Show die depending on the size the user chooses
+                //Show die depending on the size the user chooses
                 if (diceSize === 4) {
                     document.getElementById("d4ImageDark").style.visibility = "visible";
                 } else if (diceSize === 6) {
@@ -137,7 +137,7 @@ function rollDice() {
             }
         }
     } else {
-    //Focuses mouse to text box
+        //Focuses mouse to text box
         rollCountObj.focus();
         messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
 
