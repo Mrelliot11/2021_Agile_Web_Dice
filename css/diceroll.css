@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src:local(Blackmoon Quest);
+  src: url(fonts/Blackmoon_Quest.ttf);
 }
 
 * {
@@ -109,13 +109,7 @@ form {
 }
 
 #volume-control {
-  display: inline-block;
   margin-left: 1em;
-  vertical-align: middle;
-}
-
-#diceSliderLabel {
-  display: inline-block;
 }
 
 input[type=range] {
