@@ -109,7 +109,13 @@ form {
 }
 
 #volume-control {
+  display:inline-block;
   margin-left: 1em;
+  vertical-align:middle;
+}
+
+#diceSliderLabel {
+  display: inline-block;
 }
 
 input[type=range] {
