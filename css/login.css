@@ -1,5 +1,10 @@
 /*Created with help from a reference from w3schools*/
 /*CSS file*/
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/Blackmoon_Quest.ttf") format('truetype');
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
