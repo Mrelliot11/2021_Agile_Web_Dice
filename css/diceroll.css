@@ -10,6 +10,72 @@
   background-color: #fffcfc;
 }
 
+#introText {
+  text-align: center;
+  padding-bottom: 2em;
+ 
+}
+
+#diceColor {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#diceInputForm {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#diceEnhancementForm {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#diceSizeForm {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#diceSliderLabel {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#diceRolls {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+
+#messageResultText {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#messageAverageResultText {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#messageMaxResultText{
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#messageMinResultText {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+#messageAllRollsText {
+  text-align: left;
+  padding-left: 320px;
+  padding-bottom: 1em;
+}
+
+
+
+
 #lightMode {
   color: white;
   border-radius: .3125em;
@@ -98,14 +164,25 @@ form {
   color: blue;
   text-align: center;
   font-size: 1em;
+  
 }
 
+
 #rollButton {
+  display: block;
   border-radius: .3125em;
-  font-size: 1em;
-  background: white;
-  color: black;
-  margin-left: 1em;
+  font-size: 3em;
+  background: #716495;
+  color: darkgrey;
+ 
+  margin-top: 30px;
+  height: 75px;
+  width: 100px;
+}
+#rollButton:hover,
+#rollButton:focus {
+  background: purple!important;
+  color: #d60000!important;
 }
 
 #volume-control {
@@ -162,6 +239,7 @@ input[type=range]::-moz-range-thumb {
   background: purple;
   cursor: pointer;
 }
+
 
 p,
 b {
