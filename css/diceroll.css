@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/Blackmoon_Quest.ttf);
+  src: url(/fonts/Blackmoon_Quest.ttf);
 }
 
 * {
