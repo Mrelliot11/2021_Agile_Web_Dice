@@ -1,7 +1,11 @@
 /*jslint browser: true*/
 
+//Define variables
 var totalSum = 0;
 var rollSound = new Audio();
+var volume = "";
+var backgroundAudio = "";
+var backgroundVolumeSlider = "";
 
 //Determines the volume of the roll sound
 volume = document.getElementById("volume-control");
@@ -30,7 +34,6 @@ backgroundVolumeSlider.addEventListener("mousemove", setBackgroundVolume);
 function setBackgroundVolume() {
     backgroundAudio.volume = backgroundVolumeSlider.value / 100;
 }
-
 
 
 function rollDice() {
