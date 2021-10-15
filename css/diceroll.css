@@ -191,8 +191,19 @@ form {
   vertical-align:middle;
 }
 
+#backgroundVolume-control {
+  display:inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+
 #diceSliderLabel {
   display: inline-block;
+}
+
+#backgroundVolumeSliderLabel {
+  display: inline-block;
+  margin-left: 1em;
 }
 
 input[type=range] {
