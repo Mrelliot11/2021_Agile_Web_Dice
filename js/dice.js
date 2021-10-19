@@ -4,11 +4,18 @@
 var totalSum = 0;
 var rollSound = new Audio();
 var crashSound = new Audio();
+var volume = "";
 
 //Determines the volume of the roll sound
 volume = document.getElementById("volume-control");
 volume.addEventListener("change", function(e) {
 rollSound.volume = e.currentTarget.value / 100;
+});
+
+//Determines the volume of the crash sound
+volume = document.getElementById("crashVolume-control");
+volume.addEventListener("change", function(e) {
+crashSound.volume = e.currentTarget.value / 100;
 });
 
 function rollDice() {

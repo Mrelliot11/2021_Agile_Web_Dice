@@ -191,6 +191,12 @@ form {
   vertical-align:middle;
 }
 
+#crashVolume-control {
+  display:inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+
 #backgroundVolume-control {
   display:inline-block;
   margin-left: 1em;
@@ -199,6 +205,11 @@ form {
 
 #diceSliderLabel {
   display: inline-block;
+}
+
+#crashSliderLabel {
+  display: inline-block;
+  margin-left: 1em;
 }
 
 #backgroundVolumeSliderLabel {
