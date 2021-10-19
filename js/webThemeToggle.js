@@ -5,5 +5,5 @@ function setStyleSource (linkID, sourceLoc) {
   
   document.getElementById("mySelect").addEventListener("change", function(){
       var selected = this.options[this.selectedIndex].value;
-      setStyleSource ("s1", selected)
+      setStyleSource ("s1", selected);
   });
