@@ -13,6 +13,8 @@
 
 <body>
 
+  <p>Click this for music if autoplay is not enabled!</p><audio id="backgroundVolumeChrome" controls><source src="audio/ron-gelinas-chillout-lounge-slow-grind.mp3" type="audio/mp3"></audio>
+
   <nav>
     <ul>
       <li><a href="diceroll.html">Home</a></li>
@@ -104,18 +106,24 @@
 
   </form> 
 
+
   <div id="diceSliderLabel">
-    <b>Volume:</b>
+    <b>Roll Volume:</b>
   </div>
 
-  <input  autocomplete="off" id="volume-control" type="range" min="0" max="100" value="100">
+  <input autocomplete="off" id="volume-control" type="range" min="0" max="100" value="100">
+
+  <div id="backgroundVolumeSliderLabel">
+    <b>Background Music Volume:</b>
+  </div>
+
+  <input autocomplete="off" id="backgroundVolume-control" type="range" min="0" max="100" value="50">
 
   <div id="diceRolls">
 
   </div>
-  
 
-  
+
   <p id='messageResultText'></p>
   <p id='messageAverageResultText'></p>
   <p id='messageMaxResultText'></p>
