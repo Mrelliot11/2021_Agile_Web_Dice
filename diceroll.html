@@ -35,9 +35,22 @@
   <p id="introText">
     Hello! Welcome to our dice rolling app. This app will allow you to roll dice
     in a visual manner in your web browser. Our app has several different features,
-    and we are continually improving it.
+    and we are continually improving it. 
+  </p>
+  <br>
+  <p id="videoIns">
+    Press play below to view a tutorial video on our page. 
   </p>
 
+
+  <div id="videoTutorial">
+    <video id="video" controls width="560">
+        <source id="mp4" type="video/mp4" />
+    </video>
+</div>
+
+
+<div id="playButton" onclick="loadVideo('testTutorial.mp4');">Play</div>
 
   <form id="diceColor">  
     <b> What color would you like your Dice to be? -------------------------- </b>
