@@ -12,8 +12,41 @@
 
 #introText {
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
  
+}
+
+#videoIns {
+  text-align: center;
+  padding-bottom: 1em;
+ 
+}
+
+#video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#playButton {
+  display: block;
+  border-radius: .3125em;
+  font-size: 1em;
+  text-align: center;
+  background: #716495;
+  color: darkgrey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 23px;
+  width: 60px;
+}
+
+#playButton:hover,
+#playButton:focus {
+  background: purple!important;
+  color: #d60000!important;
 }
 
 #diceColor {
