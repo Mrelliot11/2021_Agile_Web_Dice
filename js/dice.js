@@ -1,14 +1,42 @@
 /*jslint browser: true*/
 
+//Define variables
 var totalSum = 0;
 var rollSound = new Audio();
 var crashSound = new Audio();
+var volume = "";
+var backgroundAudio = "";
+var backgroundVolumeSlider = "";
+
 
 //Determines the volume of the roll sound
 volume = document.getElementById("volume-control");
 volume.addEventListener("change", function(e) {
 rollSound.volume = e.currentTarget.value / 100;
 });
+
+/*  
+Credits for the background music
+
+Slow Grind by Ron Gelinas Chillout Lounge | https://soundcloud.com/atmospheric-music-portal
+Creative Commons Attribution 3.0 Unported License
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+Music promoted by https://www.chosic.com/free-music/all/
+*/
+
+//Plays the background music as soon as someone opens the diceroll page
+backgroundAudio = new Audio();
+backgroundAudio.src = "audio/ron-gelinas-chillout-lounge-slow-grind.mp3";
+backgroundAudio.play();
+
+//Allows the user to change the volume of the background music
+backgroundVolumeSlider = document.getElementById("backgroundVolume-control");
+backgroundVolumeSlider.addEventListener("mousemove", setBackgroundVolume);
+ 
+function setBackgroundVolume() {
+    backgroundAudio.volume = backgroundVolumeSlider.value / 100;
+}
+
 
 function rollDice() {
     "use strict";
@@ -42,7 +70,6 @@ function rollDice() {
     // Determines source for crash sound file
     crashSound.src = "audio/crash.wav";
 
-
     //Creating objects from the two selections, number of dice and dice size list
     var rollCountObj = document.getElementById("numberOfDiceInput");
     var rollNumberObj = document.getElementById("diceSizeList");
@@ -50,7 +77,7 @@ function rollDice() {
     //Create variable to get enhancement from user
     var rollEnhancementObj = document.getElementById("diceEnhancementList");
 
-  //Create object of the message result text
+    //Create object of the message result text
     var messageResultTextObj = document.getElementById("messageResultText");
 
     //Clear diceroll box
