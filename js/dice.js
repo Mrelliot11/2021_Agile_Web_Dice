@@ -2,6 +2,7 @@
 
 var totalSum = 0;
 var rollSound = new Audio();
+var crashSound = new Audio();
 
 //Determines the volume of the roll sound
 volume = document.getElementById("volume-control");
@@ -38,8 +39,8 @@ function rollDice() {
     // Determine source for roll sound file
     rollSound.src = "audio/rollingdice.wav";
 
-    //play the audio file
-    rollSound.play();
+    // Determines source for crash sound file
+    crashSound.src = "audio/crash.wav";
 
 
     //Creating objects from the two selections, number of dice and dice size list
@@ -64,6 +65,8 @@ function rollDice() {
     rollEnhancement = Number(rollEnhancementObj.value);
 
     if (Number.isInteger(diceCount) && diceCount > 0) {
+        //play the rolling audio file
+        rollSound.play();
         //Repeats while statement based on number selected in inputNumber
         while (index <= diceCount) {
             
@@ -87,6 +90,7 @@ function rollDice() {
 
         }
     } else {
+        crashSound.play();
         //Focuses mouse to text box
         rollCountObj.focus();
         messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
