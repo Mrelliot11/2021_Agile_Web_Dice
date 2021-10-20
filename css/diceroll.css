@@ -49,58 +49,15 @@
   color: #d60000!important;
 }
 
-#diceColor {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#diceInputForm {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#diceEnhancementForm {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#diceSizeForm {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#diceSliderLabel {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#diceRolls {
+#diceColor, #diceInputForm, #diceEnhancementForm,
+#diceSizeForm, #diceSliderLabel, #diceRolls {
   text-align: left;
   padding-left: 320px;
   padding-bottom: 1em;
 }
 
-#messageResultText {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#messageAverageResultText {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#messageMaxResultText{
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#messageMinResultText {
-  text-align: left;
-  padding-left: 320px;
-  padding-bottom: 1em;
-}
-#messageAllRollsText {
+#messageResultText, #messageAverageResultText, #messageMaxResultText,
+#messageMinResultText, #messageAllRollsText {
   text-align: left;
   padding-left: 320px;
   padding-bottom: 1em;
@@ -125,7 +82,6 @@
 nav {
   padding-bottom: 0.625em;
   text-align: center;
-
 }
 
 nav a:link {
@@ -134,7 +90,6 @@ nav a:link {
 
 nav a:visited {
   color: purple;
-
 }
 
 nav a:hover,
@@ -145,8 +100,6 @@ nav a:focus {
 nav li {
   padding: 1em, 1em, 0, 1em;
   display: inline;
-
-
 }
 
 nav a {
@@ -197,7 +150,6 @@ form {
   
 }
 
-
 #rollButton {
   display: block;
   border-radius: .3125em;
@@ -209,6 +161,7 @@ form {
   height: 75px;
   width: 100px;
 }
+
 #rollButton:hover,
 #rollButton:focus {
   background: purple!important;
@@ -299,23 +252,8 @@ p, b {
   visibility: hidden;
 }
 
-#d6ImageLight {
-  padding-left: 2em;
-}
-
-#d8ImageLight {
-  padding-left: 2em;
-}
-
-#d10ImageLight {
-  padding-left: 2em;
-}
-
-#d12ImageLight {
-  padding-left: 2em;
-}
-
-#d20ImageLight {
+#d6ImageLight, #d8ImageLight, #d10ImageLight,
+#d12ImageLight, #d20ImageLight {
   padding-left: 2em;
 }
 
@@ -323,97 +261,32 @@ p, b {
   visibility: hidden;
 }
 
-#d6ImageDark {
-  padding-left: 2em;
-}
-
-#d8ImageDark {
-  padding-left: 2em;
-}
-
-#d10ImageDark {
-  padding-left: 2em;
-}
-
-#d12ImageDark {
-  padding-left: 2em;
-}
-
-#d20ImageDark {
+#d6ImageDark, #d8ImageDark, #d10ImageDark,
+#d12ImageDark, #d20ImageDark {
   padding-left: 2em;
 }
 
 /* Styling options for screens that are 600 px or less */
-/* Styling options for screens that are 600 px or less */
-/* Styling options for screens that are 600 px or less */
-/* Styling options for screens that are 600 px or less */
-/* Styling options for screens that are 600 px or less */
-/* Styling options for screens that are 600 px or less */
-@media only screen and (max-width: 600px) {
-
-
+@media only screen and (max-width: 768px) {
 
   #introText {
     text-align: center;
     padding-bottom: 2em;
   }
 
-  #diceColor {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #diceInputForm {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #diceEnhancementForm {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #diceSizeForm {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #diceSliderLabel {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #diceRolls {
+  #diceColor, #diceInputForm, #diceEnhancementForm,
+  #diceSizeForm, #diceSliderLabel, #diceRolls {
     text-align: left;
     padding-left: 0px;
     padding-bottom: 1em;
   }
 
-  #messageResultText {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #messageAverageResultText {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #messageMaxResultText{
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #messageMinResultText {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
-  #messageAllRollsText {
-    text-align: left;
-    padding-left: 0px;
-    padding-bottom: 1em;
-  }
+  #messageResultText, #messageAverageResultText, #messageMaxResultText,
+#messageMinResultText, #messageAllRollsText {
+  text-align: left;
+  padding-left: 0px;
+  padding-bottom: 1em;
+}
 
   #lightMode {
     color: white;
@@ -452,8 +325,6 @@ p, b {
   nav li {
     padding: 1em, 1em, 0, 1em;
     display: inline;
-
-
   }
 
   nav a {
@@ -483,9 +354,9 @@ p, b {
   }
 
   #ddlToggleTheme {
-    position: absolute;
-    right: 0.625em;
-    top: 1em;
+    position:relative;
+    /* right: 0.625em;
+    top: 1em; */
   }
 
   form {
@@ -594,23 +465,8 @@ p, b {
     visibility: hidden;
   }
 
-  #d6ImageLight {
-    padding-left: 2em;
-  }
-
-  #d8ImageLight {
-    padding-left: 2em;
-  }
-
-  #d10ImageLight {
-    padding-left: 2em;
-  }
-
-  #d12ImageLight {
-    padding-left: 2em;
-  }
-
-  #d20ImageLight {
+  #d6ImageLight, #d8ImageLight, #d10ImageLight,
+  #d12ImageLight, #d20ImageLight {
     padding-left: 2em;
   }
 
@@ -618,23 +474,8 @@ p, b {
     visibility: hidden;
   }
 
-  #d6ImageDark {
-    padding-left: 2em;
-  }
-
-  #d8ImageDark {
-    padding-left: 2em;
-  }
-
-  #d10ImageDark {
-    padding-left: 2em;
-  }
-
-  #d12ImageDark {
-    padding-left: 2em;
-  }
-
-  #d20ImageDark {
+  #d6ImageDark, #d8ImageDark, #d10ImageDark,
+  #d12ImageDark, #d20ImageDark {
     padding-left: 2em;
   }
 
