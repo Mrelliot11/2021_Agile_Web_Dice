@@ -106,9 +106,6 @@
   padding-bottom: 1em;
 }
 
-
-
-
 #lightMode {
   color: white;
   border-radius: .3125em;
@@ -242,12 +239,10 @@ form {
 
 #crashSliderLabel {
   display: inline-block;
-  margin-left: 1em;
 }
 
 #backgroundVolumeSliderLabel {
   display: inline-block;
-  margin-left: 1em;
 }
 
 input[type=range] {
@@ -295,9 +290,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-
-p,
-b {
+p, b {
   font-size: 18px;
   color: #353535;
 }
@@ -348,4 +341,305 @@ b {
 
 #d20ImageDark {
   padding-left: 2em;
+}
+
+/* Styling options for screens that are 600 px or less */
+/* Styling options for screens that are 600 px or less */
+/* Styling options for screens that are 600 px or less */
+/* Styling options for screens that are 600 px or less */
+/* Styling options for screens that are 600 px or less */
+/* Styling options for screens that are 600 px or less */
+@media only screen and (max-width: 600px) {
+
+
+
+  #introText {
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  #diceColor {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #diceInputForm {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #diceEnhancementForm {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #diceSizeForm {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #diceSliderLabel {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #diceRolls {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+
+  #messageResultText {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #messageAverageResultText {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #messageMaxResultText{
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #messageMinResultText {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+  #messageAllRollsText {
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+
+  #lightMode {
+    color: white;
+    border-radius: .3125em;
+    border-style: solid;
+    border-width: thin;
+    padding: .125em;
+    background-color: #716495;
+    font-size: 25px;
+    opacity: 80%;
+  }
+
+  #lightMode:hover,
+  #lightMode:focus {
+    color: red;
+  }
+
+  nav {
+    padding-bottom: 0.625em;
+    text-align: center;
+  }
+
+  nav a:link {
+    color: darkgrey;
+  }
+
+  nav a:visited {
+    color: purple;
+
+  }
+
+  nav a:hover, nav a:focus {
+    color: #d60000;
+  }
+
+  nav li {
+    padding: 1em, 1em, 0, 1em;
+    display: inline;
+
+
+  }
+
+  nav a {
+    border-radius: .3125em;
+    border-style: solid;
+    border-width: thin;
+    padding: .125em;
+    background-color: #716495;
+    font-size: 25px;
+    opacity: 80%;
+    display: inline-block;
+  }
+
+  a {
+    border-radius: .3125em;
+    border-style: solid;
+    border-width: thin;
+    padding: .125em;
+    background-color: #716495;
+    color: darkgrey;
+    font-size: 18px;
+  }
+
+  a:hover,
+  nav a:focus {
+    color: #d60000;
+  }
+
+  #ddlToggleTheme {
+    position: absolute;
+    right: 0.625em;
+    top: 1em;
+  }
+
+  form {
+    padding-bottom: .3125em;
+  }
+
+  #numberOfDiceInput {
+    border-radius: .3125em;
+    box-sizing: content-box;
+    width: 8%;
+    background: white;
+    background-image: none;
+    color: blue;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #rollButton {
+    display: block;
+    border-radius: .3125em;
+    font-size: 3em;
+    background: #716495;
+    color: darkgrey;
+    margin-top: 30px;
+    height: 75px;
+    width: 100px;
+  }
+
+  #rollButton:hover, #rollButton:focus {
+    background: purple!important;
+    color: #d60000!important;
+  }
+
+  #volume-control {
+    display:inline-block;
+    margin-left: 1em;
+    vertical-align:middle;
+  }
+
+  #backgroundVolume-control {
+    display:inline-block;
+    margin-left: 1em;
+    vertical-align: middle;
+  }
+
+  #diceSliderLabel {
+    display: inline-block;
+  }
+
+  #backgroundVolumeSliderLabel {
+    display: inline-block;
+    margin-left: 0em;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    cursor: pointer;
+    background: black;
+    border-radius: 25px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 20px;
+    border-radius: 7px;
+    background: purple;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: black;
+  }
+
+  input[type=range]::-moz-range-track {
+    cursor: pointer;
+    height: 10px;
+    background: black;
+    border-radius: 25px;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 20px;
+    border-radius: 7px;
+    background: purple;
+    cursor: pointer;
+  }
+
+  p, b {
+    font-size: 18px;
+    color: #353535;
+  }
+
+  #dieImages {
+    visibility: hidden;
+  }
+
+  #d6ImageLight {
+    padding-left: 2em;
+  }
+
+  #d8ImageLight {
+    padding-left: 2em;
+  }
+
+  #d10ImageLight {
+    padding-left: 2em;
+  }
+
+  #d12ImageLight {
+    padding-left: 2em;
+  }
+
+  #d20ImageLight {
+    padding-left: 2em;
+  }
+
+  #dieImagesDark {
+    visibility: hidden;
+  }
+
+  #d6ImageDark {
+    padding-left: 2em;
+  }
+
+  #d8ImageDark {
+    padding-left: 2em;
+  }
+
+  #d10ImageDark {
+    padding-left: 2em;
+  }
+
+  #d12ImageDark {
+    padding-left: 2em;
+  }
+
+  #d20ImageDark {
+    padding-left: 2em;
+  }
+
+  #musicDesc, #backgroundVolumeChrome {
+    display: none;
+  }
+
 }
