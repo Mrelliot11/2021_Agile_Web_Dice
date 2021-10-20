@@ -19,6 +19,8 @@ crashSound.volume = e.currentTarget.value / 100;
 });
 
 function rollDice() {
+
+
     "use strict";
   // Determine variables
     var diceCount;
@@ -78,7 +80,7 @@ function rollDice() {
         while (index <= diceCount) {
             
             // If dice count is 20 or lower do a delayed roll otherwise output all data instantly
-            if (diceCount <= 20) {
+            if (diceCount <= 10) {
                 delayedRoll(index);
                 //add 1 to index
                 index = index + 1;
@@ -103,104 +105,96 @@ function rollDice() {
         messageResultTextObj.innerHTML = "Please enter a positive integer value e.g. 1, 2, 3 \n Other types of numbers are not accepted";
 
     }
-// function to delay rolling by 2 seconds each roll
-function delayedRoll(i) {
-    setTimeout(function() {
-        normalRoll(i);
+    // function to delay rolling by 2 seconds each roll
+    function delayedRoll(i) {
+        setTimeout(function() {
+            normalRoll(i);
 
-    }, 2000 * i);
-}
+        }, 1000 * i);
+    }
 
-//Dice rolling calculations
-function normalRoll(i) {
-    //Selects random number between 1 and 6 and adds en
-    rollResult = (Math.floor(Math.random() * diceSize) + 1) + rollEnhancement;
+    //Dice rolling calculations
+    function normalRoll(i) {
+        //Selects random number between 1 and 6 and adds en
+        rollResult = (Math.floor(Math.random() * diceSize) + 1) + rollEnhancement;
 
-    //Displays result of each roll by creating <p> element for each roll
-    tagP = document.createElement("p");
-    resultOutput = document.createTextNode("Roll #" + i + ": " + rollResult);
-    divElement = document.getElementById("diceRolls");
-    tagP.appendChild(resultOutput);
-    divElement.appendChild(tagP);
+        //Displays result of each roll by creating <p> element for each roll
+        tagP = document.createElement("p");
+        resultOutput = document.createTextNode("Roll #" + i + ": " + rollResult);
+        divElement = document.getElementById("diceRolls");
+        tagP.appendChild(resultOutput);
+        divElement.appendChild(tagP);
 
-    //Adds the result of each roll group to the sum
-    resultSum = resultSum + rollResult;
-
-
+        //Adds the result of each roll group to the sum
+        resultSum = resultSum + rollResult;
 
 
-    //Displays sum of all rolls
-    message = "The total of this roll is: " + resultSum;
 
-    //Displays max of all rolls
-    resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
-    messageMax = "The max of all dice rolled is: " + resultMax;
 
-    //Displays min of all rolls
-    resultMin = (diceCount + (diceCount * rollEnhancement));
-    messageMin = "The min of all dice rolled is: " + resultMin;
-    //Adds sum of each roll group to overall sum
-    totalSum = totalSum + rollResult;
+        //Displays sum of all rolls
+        message = "The total of this roll is: " + resultSum;
 
-    //Displays average of all rolls
-    resultAverage = Math.round(resultSum / diceCount);
-    messageAverage = "The average of all dice rolled is: " + resultAverage;
+        //Displays max of all rolls
+        resultMax = ((diceCount * diceSize) + (diceCount * rollEnhancement));
+        messageMax = "The max of all dice rolled is: " + resultMax;
 
-    //Displays overall sum of all rolls
-    messageTotal = "The overall sum of all rolls is: " + totalSum;
-    document.getElementById("messageAllRollsText").innerHTML = messageTotal;
+        //Displays min of all rolls
+        resultMin = (diceCount + (diceCount * rollEnhancement));
+        messageMin = "The min of all dice rolled is: " + resultMin;
+        //Adds sum of each roll group to overall sum
+        totalSum = totalSum + rollResult;
 
-    //Displays each calculation
-    document.getElementById("messageResultText").innerHTML = message;
-    document.getElementById("messageAverageResultText").innerHTML = messageAverage;
-    document.getElementById("messageMaxResultText").innerHTML = messageMax;
-    document.getElementById("messageMinResultText").innerHTML = messageMin;
+        //Displays average of all rolls
+        resultAverage = Math.round(resultSum / diceCount);
+        messageAverage = "The average of all dice rolled is: " + resultAverage;
 
-    // sets the dice color based on the User's selection
-    if (diceColor === "white") {
-    //Show die depending on the size the user chooses
-        if (diceSize === 4) {
-            document.getElementById("d4ImageLight").style.visibility = "visible";
-        } else if (diceSize === 6) {
-            document.getElementById("d6ImageLight").style.visibility = "visible";
-        } else if (diceSize === 8) {
-            document.getElementById("d8ImageLight").style.visibility = "visible";
-        } else if (diceSize === 10) {
-            document.getElementById("d10ImageLight").style.visibility = "visible";
-        } else if (diceSize === 12) {
-            document.getElementById("d12ImageLight").style.visibility = "visible";
-        } else if (diceSize === 20) {
-            document.getElementById("d20ImageLight").style.visibility = "visible";
-        }
-    } else if (diceColor === "black") {
+        //Displays overall sum of all rolls
+        messageTotal = "The overall sum of all rolls is: " + totalSum;
+        document.getElementById("messageAllRollsText").innerHTML = messageTotal;
+
+        //Displays each calculation
+        document.getElementById("messageResultText").innerHTML = message;
+        document.getElementById("messageAverageResultText").innerHTML = messageAverage;
+        document.getElementById("messageMaxResultText").innerHTML = messageMax;
+        document.getElementById("messageMinResultText").innerHTML = messageMin;
+
+        // sets the dice color based on the User's selection
+        if (diceColor === "white") {
         //Show die depending on the size the user chooses
-        if (diceSize === 4) {
-            document.getElementById("d4ImageDark").style.visibility = "visible";
-        } else if (diceSize === 6) {
-            document.getElementById("d6ImageDark").style.visibility = "visible";
-        } else if (diceSize === 8) {
-            document.getElementById("d8ImageDark").style.visibility = "visible";
-        } else if (diceSize === 10) {
-            document.getElementById("d10ImageDark").style.visibility = "visible";
-        } else if (diceSize === 12) {
-            document.getElementById("d12ImageDark").style.visibility = "visible";
-        } else if (diceSize === 20) {
-            document.getElementById("d20ImageDark").style.visibility = "visible";
+            if (diceSize === 4) {
+                document.getElementById("d4ImageLight").style.visibility = "visible";
+            } else if (diceSize === 6) {
+                document.getElementById("d6ImageLight").style.visibility = "visible";
+            } else if (diceSize === 8) {
+                document.getElementById("d8ImageLight").style.visibility = "visible";
+            } else if (diceSize === 10) {
+                document.getElementById("d10ImageLight").style.visibility = "visible";
+            } else if (diceSize === 12) {
+                document.getElementById("d12ImageLight").style.visibility = "visible";
+            } else if (diceSize === 20) {
+                document.getElementById("d20ImageLight").style.visibility = "visible";
+            }
+        } else if (diceColor === "black") {
+            //Show die depending on the size the user chooses
+            if (diceSize === 4) {
+                document.getElementById("d4ImageDark").style.visibility = "visible";
+            } else if (diceSize === 6) {
+                document.getElementById("d6ImageDark").style.visibility = "visible";
+            } else if (diceSize === 8) {
+                document.getElementById("d8ImageDark").style.visibility = "visible";
+            } else if (diceSize === 10) {
+                document.getElementById("d10ImageDark").style.visibility = "visible";
+            } else if (diceSize === 12) {
+                document.getElementById("d12ImageDark").style.visibility = "visible";
+            } else if (diceSize === 20) {
+                document.getElementById("d20ImageDark").style.visibility = "visible";
+            }
         }
     }
-}
+
+
+    
 
 
 }
 
-
-function loadVideo(id)
-{
-    var video = document.getElementById('video');
-    var mp4 = document.getElementById('mp4');
-
-    mp4.src = "Video/" + id;
-
-    video.load();
-    video.play();
-}
