@@ -50,7 +50,7 @@
 }
 
 #diceColor, #diceInputForm, #diceEnhancementForm,
-#diceSizeForm, #diceSliderLabel, #diceRolls {
+#diceSizeForm, #diceRolls {
   text-align: left;
   padding-left: 320px;
   padding-bottom: 1em;
