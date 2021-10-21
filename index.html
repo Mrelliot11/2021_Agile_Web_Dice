@@ -9,24 +9,24 @@
 
 <h2 id='introHeading'>Welcome to webdice!</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" id="loginButton">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" id="loginButton" title="A button that brings up the login form">Login</button>
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="javascript:;" onsubmit="userLogin();">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images/dicelogo.png" alt="DiceAvatar" class="avatar">
+      <img src="images/dicelogo.png" title="An image of a d20" alt="DiceAvatar" class="avatar">
     </div>
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" id="userUsername" name="userUsername" required>
+      <input type="text" title="A text field for you to enter your username" placeholder="Enter Username" id="userUsername" name="userUsername" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" id="userPassword" name="userPassword" required>
+      <input type="password" title="A text field for you to enter your password" placeholder="Enter Password" id="userPassword" name="userPassword" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" title="A button to log into our web page">Login</button>
     </div>
 
   </form>
