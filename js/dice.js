@@ -43,6 +43,7 @@ function rollDice() {
     var diceColorObj = document.getElementById("diceColorList");
     var diceColor;
 
+
     //set dice color variable
     diceColor = diceColorObj.value.toString();
 
@@ -85,7 +86,8 @@ function rollDice() {
                 //add 1 to index
                 index = index + 1;
             } else {
-
+                //re-enables button so user doesn't need to wait for delay
+                document.getElementById("rollButton").disabled = false;
                 //Will call this function without timeout for a roll number over 20
                 normalRoll(index);
                 //add 1 to index
@@ -99,6 +101,8 @@ function rollDice() {
 
         }
     } else {
+        //re-enables button so user doesn't need to wait for delay
+        document.getElementById("rollButton").disabled = false;
         crashSound.play();
         //Focuses mouse to text box
         rollCountObj.focus();
