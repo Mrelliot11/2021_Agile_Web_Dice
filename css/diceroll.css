@@ -484,4 +484,8 @@ p, b {
     display: none;
   }
 
+  #videotutorial {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
