@@ -13,17 +13,17 @@
 
 <body>
 
-  <p id="musicDesc">Click this for music if autoplay is not enabled!</p><audio id="backgroundVolumeChrome" controls><source src="audio/ron-gelinas-chillout-lounge-slow-grind.mp3" type="audio/mp3"></audio>
+  <p id="musicDesc">Click this for music if autoplay is not enabled!</p><audio id="backgroundVolumeChrome" title="A music player that plays relaxing background music" controls><source src="audio/ron-gelinas-chillout-lounge-slow-grind.mp3" type="audio/mp3"></audio>
 
   <nav>
     <ul>
-      <li><a href="diceroll.html">Home</a></li>
-      <li><a href="FAQ.html">FAQ</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="diceroll.html" title="Home Page">Home</a></li>
+      <li><a href="FAQ.html" title="Frequently Asked Questions">FAQ</a></li>
+      <li><a href="aboutus.html" title="Information about our web team">About Us</a></li>
     </ul>
 
     <form id="ddlToggleTheme">
-      <select id="mySelect" autocomplete="off">
+      <select id="mySelect" autocomplete="off" title="Toggles between light and dark mode for the theme">
         <option value="css/diceroll.css">Light</option>
         <option value="css/dicerolldark.css">Dark</option>
       </select>
@@ -43,16 +43,16 @@
   </p>
 
 
-  <div id="videoTutorial">
+  <div id="videoTutorial" title="A video that explains how to use our dice roller">
     <video id="video" controls width="560">
         <source id="mp4" type="video/mp4" />
     </video>
 </div>
 
 
-<div id="playButton" onclick="loadVideo('testTutorial.mp4');">Play</div>
+<div id="playButton" title="A button that plays the tutorial video" onclick="loadVideo('testTutorial.mp4');">Play</div>
 
-  <form id="diceColor">  
+  <form id="diceColor" title="A form that lets you switch between white and black dice">  
     <b> What color would you like your Dice to be? -------------------------- </b>
 
       <select id = "diceColorList" onchange = "value = this.value" >
@@ -67,14 +67,14 @@
   <form id="diceInputForm" onsubmit="return false;">  
     <b> How many times would you like to roll the dice? --------------------</b>  
 
-    <input id="numberOfDiceInput" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
+    <input id="numberOfDiceInput" title="A form that lets you enter a positive integer to decide how many dice to roll" type="number" max="9999" min="1" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
   
   </form> 
 
 
   <form id="diceEnhancementForm">  
     <b> The enhancement you would like to add to each one of your dice - </b>  
-    <select id = "diceEnhancementList" onchange = "value = this.value" >  
+    <select id = "diceEnhancementList" title="A form that lets you add a flat bonus or penalty to each dice roll" onchange = "value = this.value" >  
       <option value="-10"> -10 </option>  
       <option value="-9"> -9 </option>  
       <option value="-8"> -8 </option>  
@@ -104,7 +104,7 @@
 
   <form id="diceSizeForm">  
     <b> The size of dice you would like to roll -------------------------------- </b>  
-    <select id = "diceSizeList" onchange = "value = this.value" >
+    <select id = "diceSizeList" title="A form that lets you pick how many sides you would like on your dice" onchange = "value = this.value" >
       <option value="4" selected> d4 </option>  
       <option value="6"> d6 </option>  
       <option value="8"> d8 </option>  
@@ -113,7 +113,7 @@
       <option value="20"> d20 </option>  
       <option value="100"> d100 </option>
      
-      <input id="rollButton" type="button" value="Roll" onClick="rollDice(); buttonDelay()"/>
+      <input id="rollButton" title="A button that rolls the dice" type="button" value="Roll" onClick="buttonDelay(); rollDice()"/>
   
     </select>  
 
@@ -124,19 +124,19 @@
     <b>Roll Volume:</b>
   </div>
 
-  <input autocomplete="off" id="volume-control" type="range" min="0" max="100" value="100"><br>
+  <input autocomplete="off" title="A slider that lets you control the dice roll volume" id="volume-control" type="range" min="0" max="100" value="100"><br>
 
   <div id="crashSliderLabel">
     <b>Crash Volume:</b>
   </div>
 
-  <input autocomplete="off" id="crashVolume-control" type="range" min="0" max="100" value="100"><br>
+  <input autocomplete="off" title="A slider that lets you control the crash sound volume" id="crashVolume-control" type="range" min="0" max="100" value="100"><br>
 
   <div id="backgroundVolumeSliderLabel">
     <b>Background Music Volume:</b>
   </div>
 
-  <input autocomplete="off" id="backgroundVolume-control" type="range" min="0" max="100" value="5">
+  <input autocomplete="off" title="A slider that lets you control the background music volume" id="backgroundVolume-control" type="range" min="0" max="100" value="5">
 
   <div id="diceRolls">
 
