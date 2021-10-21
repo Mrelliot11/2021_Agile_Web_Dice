@@ -67,7 +67,7 @@
   <form id="diceInputForm" onsubmit="return false;">  
     <b> How many times would you like to roll the dice? --------------------</b>  
 
-    <input id="numberOfDiceInput" title="A form that lets you enter a positive integer to decide how many dice to roll" type="number" max="9999" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
+    <input id="numberOfDiceInput" title="A form that lets you enter a positive integer to decide how many dice to roll" type="number" max="9999" min="1" onchange = "value = this.value" oninput="javascript: if (this.value.length > 4) this.value = this.value.slice(0,4);" onkeypress= " if(event.keyCode == 13) document.getElementById('rollButton').click()" >
   
   </form> 
 
