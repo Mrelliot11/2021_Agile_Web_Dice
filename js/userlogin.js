@@ -10,6 +10,6 @@ function userLogin() {
     var currentWindow = window;
 
         //setting cookie for the browsing session
-        document.cookie = "username=" + username;
-        currentWindow.location.href = "diceroll.html";
+    document.cookie = "username=" + username;
+    currentWindow.location.href = "diceroll.html";
 }

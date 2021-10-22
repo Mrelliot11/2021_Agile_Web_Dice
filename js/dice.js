@@ -196,9 +196,5 @@ function rollDice() {
         }
     }
 
-
-    
-
-
 }
 
